@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "1dca68804aba1ee5",
+    "type": "split",
+    "children": [
+      {
+        "id": "47d761adb4fdf47b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "626687037607271e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "termux/neovim.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "neovim"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4dbd5ca902f5721",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b5fe6d49edcde33a",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-folder-closed",
+          "title": "文件列表"
+        }
+      },
+      {
+        "id": "01244e22d670c2da",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#删除包含空白字符的空白行，但不删除只有一个换行符的空行",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "搜索"
+        }
+      },
+      {
+        "id": "bdbc2a9e52a75a6e",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": false
+          },
+          "icon": "lucide-tags",
+          "title": "标签"
+        }
+      },
+      {
+        "id": "40eb2a84e413498a",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "书签"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "edee9f45620861ad",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c3c60b87715caf6b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "termux/Java_web.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "反向链接"
+        }
+      },
+      {
+        "id": "951f5472e9bee5d5",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "termux/Java_web.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "出链"
+        }
+      },
+      {
+        "id": "8130bac8b93f0850",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "termux/清理缓存.md"
+          },
+          "icon": "lucide-list",
+          "title": "大纲"
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "626687037607271e",
+  "lastOpenFiles": [
+    "termux/tmux.md",
+    "笔记.md",
+    "README.md",
+    "termux/git.md",
+    "README.ma",
+    "termux/清理缓存.md",
+    "termux/其他.md",
+    "termux/Java_web.md",
+    "termux/未命名.md",
+    "termux/neovim.md",
+    "termux/备份和恢复.md",
+    "termux/终端.md",
+    "termux/adb.md",
+    "termux/chrome.md",
+    "未命名.md",
+    "termux/环境.md",
+    "termux",
+    "未命名_031231.md",
+    "未命名 1.md"
+  ]
+}
