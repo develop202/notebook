@@ -10,12 +10,12 @@ pkg install android-tools
 
 ### 第一步：开启开发者模式
 
-在==关于手机==点击==OS版本号==开启开发者模式
+在<mark>关于手机</mark>点击<mark>OS版本号</mark>开启开发者模式
 
 ### 第二步：开启无线调试连接Termux
 
-进入==开发者选项==，开启==无线调试==
-点击==使用配对码配对设备==，分屏Termux输入
+进入<mark>开发者选项</mark>，开启<mark>无线调试</mark>
+点击<mark>使用配对码配对设备</mark>，分屏Termux输入
 
 ```shell
 adb pair address:port 配对码
@@ -24,7 +24,7 @@ adb pair address:port 配对码
 ### 第三步：连接设备
 
 配对成功后，关闭窗口
-在Termux输入==当前窗口==的IP地址和端口号
+在Termux输入<mark>当前窗口</mark>的IP地址和端口号
 
 ```shell
 adb connect address:port
@@ -46,7 +46,7 @@ adb connect address:port
 ./adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
 ```
 
-==MIUI系统==如果==报错==，请打开==USB调试（安全设置）==
+<mark>MIUI系统</mark>如果<mark>报错</mark>，请打开<mark>USB调试（安全设置）</mark>
 如果无法分屏可以在开发者选项强制开启
 
 ```shell

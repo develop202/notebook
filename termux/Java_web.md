@@ -21,7 +21,7 @@
 
 # springboot3运行测试方法报错解决(目前新版本似乎已修复)
 
-在==pom.xml==里面加入以下内容
+在<mark>pom.xml</mark>里面加入以下内容
 
 ```xml
 <properties>
