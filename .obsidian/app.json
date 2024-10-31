@@ -22,5 +22,6 @@
     "editor:redo",
     "editor:configure-toolbar",
     "editor:insert-table"
-  ]
+  ],
+  "mobilePullAction": "editor:toggle-highlight"
 }
