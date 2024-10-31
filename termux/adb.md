@@ -1,6 +1,6 @@
 # adb 本机
 
-### ==提示==
+### <mark>提示</mark>
 
 Termux需要先安装android-tools
 
