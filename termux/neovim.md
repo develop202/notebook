@@ -1,6 +1,7 @@
 # nvim远程推送GitHub（没有本地仓库的情况下）
 
 ### 1. 克隆远程仓库
+
 ```shell
 git clone git@github.com:develop202/nvim.git
 ```
@@ -38,3 +39,4 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/data/data/com.termux/
 ```shell
 :%g/^\s\+$/d
 ```
+

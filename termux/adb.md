@@ -33,18 +33,22 @@ adb connect address:port
 即可连接成功
 
 # Android12以上限制子线程
-### Android 12和Android 13：
+
+### Android 12和Android 13
+
 ```shell
 ./adb shell "settings put global settings_enable_monitor_phantom_procs false"
 ```
 
-### Android 12：
+### Android 12
+
 ```shell
 ./adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent; /system/bin/device_config put activity_manager max_phantom_processes 2147483647"
 ```
 
 ==MIUI系统==如果==报错==，请打开==USB调试（安全设置）==
 如果无法分屏可以在开发者选项强制开启
+
 ```shell
 pkg install android-tools
 ```

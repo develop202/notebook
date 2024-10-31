@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "termux/neovim.md",
+                "file": "termux/tmux.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "neovim"
+              "title": "tmux"
             }
           }
         ]
@@ -149,8 +149,15 @@
   },
   "active": "626687037607271e",
   "lastOpenFiles": [
-    "termux/tmux.md",
+    "termux/清理缓存.md~",
+    "termux/备份和恢复.md~",
+    "termux/chrome.md",
+    "termux/4913",
     "笔记.md",
+    "termux/chrome.md~",
+    "termux/adb.md~",
+    "termux/tmux.md",
+    "termux/neovim.md",
     "README.md",
     "termux/git.md",
     "README.ma",
@@ -158,11 +165,9 @@
     "termux/其他.md",
     "termux/Java_web.md",
     "termux/未命名.md",
-    "termux/neovim.md",
     "termux/备份和恢复.md",
     "termux/终端.md",
     "termux/adb.md",
-    "termux/chrome.md",
     "未命名.md",
     "termux/环境.md",
     "termux",
