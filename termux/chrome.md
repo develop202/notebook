@@ -25,4 +25,3 @@
 ```
 chrome://new-tab-page
 ```
-

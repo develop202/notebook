@@ -34,9 +34,14 @@ git clone https://github.com/neovim/neovim.git
 make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/data/data/com.termux/files/usr/share/nvim
 ```
 
+### 3.安装(在Termux上需要安装后才可使用)
+
+```shell
+make install
+```
+
 # 删除包含空白字符的空白行，但不删除只有一个换行符的空行
 
 ```shell
 :%g/^\s\+$/d
 ```
-
