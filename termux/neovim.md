@@ -45,3 +45,57 @@ make install
 ```shell
 :%g/^\s\+$/d
 ```
+
+# 编译lemminx(xml lsp)
+
+### 1.克隆项目
+
+#### 克隆lemminx
+
+```shell
+git clone https://github.com/eclipse-lemminx/lemminx.git
+```
+
+#### 克隆lemminx-maven
+
+```shell
+git clone https://github.com/eclipse-lemminx/lemminx-maven.git
+```
+
+### 2.执行编译命令
+
+```shell
+mvn clean package -DskipTests
+```
+
+### 3.拷贝文件
+
+#### 需要拷贝的文件如下
+
+```shell
+# lemminx
+org.eclipse.lemminx-uber.jar
+org.eclipse.lemminx-0.29.1-SNAPSHOT.jar
+
+# lemminx-maven
+lemminx-maven-0.11.2-SNAPSHOT.jar
+lemminx-maven-0.11.2-SNAPSHOT-zip-with-dependencies.zip
+```
+
+#### 命令
+
+```shell
+cp ~/lemminx/lemminx/org.eclipse.lemminx/target/org.eclipse.lemminx-uber.jar .
+```
+
+```shell
+cp ~/lemminx/lemminx/org.eclipse.lemminx/target/org.eclipse.lemminx-0.29.1-SNAPSHOT.jar .
+```
+
+```shell
+cp ~/lemminx/lemminx-maven/lemminx-maven/target/lemminx-maven-0.11.2-SNAPSHOT.jar .
+```
+
+```shell
+cp ~/lemminx/lemminx-maven/lemminx-maven/target/lemminx-maven-0.11.2-SNAPSHOT-zip-with-dependencies.zip .
+```
