@@ -158,3 +158,58 @@ rabbitmq-plugins enable rabbitmq_management
 ```shell
 http://10.140.84.42:15672
 ```
+
+# swagger在springboot3配置
+
+1. 引入依赖
+
+```xml
+<dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <version>2.1.2</version>
+    </dependency>
+```
+
+2. 配置swagger
+
+```java
+/**
+ * swagger配置文件
+ */
+@SpringBootConfiguration
+@OpenAPIDefinition(info = @Info(
+        title = "xxx系统", // api接口文档标题
+        description = "xxx系统接口文档", // api接口文档描述
+        version = "v2.0.0", // api接口版本
+        termsOfService = "http://localhost:8080/", // api服务条款地址
+        contact = @Contact(
+                name = "作者姓名",
+                email = "作者邮箱",
+                url = "http://localhost:8080/"// 作者主页地址
+        ),
+        license = @License(
+                name = "Apache 2.0", // 授权名称
+                url = "https://www.apache.org/licenses/LICENSE-2.0.html"// 授权信息地址
+        )
+),
+        servers = {
+                @Server(
+                        url = "http://localhost:8080/", // api服务地址
+                        description = "本地服务器一服务"
+                )
+        },
+        externalDocs = @ExternalDocumentation(
+                description = "更多信息",
+                url = "xxx"
+        )
+)
+public class SwaggerConfig {
+
+}
+```
