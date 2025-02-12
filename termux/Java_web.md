@@ -219,3 +219,92 @@ public class SwaggerConfig {
 
 }
 ```
+
+# mybatis逆向工程
+
+1. 引入pom插件
+
+```xml
+<!--mybatis逆向工程插件-->
+<plugin>
+    <groupId>org.mybatis.generator</groupId>
+    <artifactId>mybatis-generator-maven-plugin</artifactId>
+    <version>1.4.2</version>
+    <configuration>
+        <overwrite>true</overwrite>
+    </configuration>
+    <dependencies>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+            <version>8.0.31</version>
+        </dependency>
+    </dependencies>
+</plugin>
+```
+
+2. 配置generatorConfig.xml
+
+将此文件放在resources目录下
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+
+    <context id="context" targetRuntime="MyBatis3">
+
+        <!--suppressAllComments 设置为true 则不再生成注释-->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/security_study"
+                        userId="root"
+                        password="123456">
+            <!--MySQL8必须加上这一句，不然生成会重复-->
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--生成实体-->
+        <javaModelGenerator targetPackage="com.power.entity"
+                            targetProject="E:\idea\project\power_security\security\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--生成xml文件-->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="E:\idea\project\power_security\security\src\main\resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!--生成dao接口-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.power.dao"
+                             targetProject="E:\idea\project\power_security\security\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--生成所有表-->
+        <table
+                tableName="%">
+            <!--enableDeleteByExample="false"-->
+            <!--enableCountByExample="false"-->
+            <!--enableUpdateByExample="false"-->
+            <!--enableSelectByExample="false">-->
+            <!--替换Sys字符串-->
+            <domainObjectRenamingRule searchString="^Sys" replaceString=""/>
+        </table>
+
+    </context>
+</generatorConfiguration>
+```
