@@ -1,21 +1,22 @@
 # maven阿里仓库镜像
 
 ```xml
+
 <mirror>
-    <id>aliyunmaven</id>
-    <mirrorOf>central</mirrorOf>
-    <name>aliyun maven</name>
-   <url>https://maven.aliyun.com/repository/public</url>
-    </mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>central</mirrorOf>
+    <name>aliyun maven</name>
+    <url>https://maven.aliyun.com/repository/public</url>
+</mirror>
 ```
 
 ```xml
-<!--  配置Maven中央仓库镜像地址  -->
+<!-- 配置Maven中央仓库镜像地址 -->
 <mirror>
-<id>aliyunmaven</id>
-<mirrorOf>*</mirrorOf>
-<name>阿里云公共仓库</name>
-<url>https://maven.aliyun.com/repository/public</url>
+    <id>aliyunmaven</id>
+    <mirrorOf>*</mirrorOf>
+    <name>阿里云公共仓库</name>
+    <url>https://maven.aliyun.com/repository/public</url>
 </mirror>
 ```
 
@@ -24,9 +25,10 @@
 在<mark>pom.xml</mark>里面加入以下内容
 
 ```xml
+
 <properties>
-    <mockito.version>4.5.1</mockito.version>
-  </properties>
+    <mockito.version>4.5.1</mockito.version>
+</properties>
 ```
 
 # proot-distro安装Ubuntu
@@ -164,16 +166,20 @@ http://10.140.84.42:15672
 1. 引入依赖
 
 ```xml
-<dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-      <version>2.2.0</version>
+
+<dependencys>
+    <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        <version>2.2.0</version>
     </dependency>
     <dependency>
-      <groupId>io.swagger.core.v3</groupId>
-      <artifactId>swagger-annotations</artifactId>
-      <version>2.1.2</version>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>2.1.2</version>
     </dependency>
+</dependencys>
+
 ```
 
 2. 配置swagger

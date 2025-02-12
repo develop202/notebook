@@ -55,13 +55,13 @@ pkg install android-tools
 
 ```shell
 adb shell device_config \
-    set_sync_disabled_for_tests persistent
+ set_sync_disabled_for_tests persistent
 ```
 
 ```shell
 adb \
-    shell \
-    device_config \
-    put activity_manager \
-    max_phantom_processes 214181594
+ shell \
+ device_config \
+ put activity_manager \
+ max_phantom_processes 214181594
 ```
