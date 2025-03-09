@@ -99,3 +99,9 @@ cp ~/lemminx/lemminx-maven/lemminx-maven/target/lemminx-maven-0.11.2-SNAPSHOT.ja
 ```shell
 cp ~/lemminx/lemminx-maven/lemminx-maven/target/lemminx-maven-0.11.2-SNAPSHOT-zip-with-dependencies.zip .
 ```
+
+# 获取终端宽度
+
+```lua
+vim.api.nvim_win_get_width(0)
+```
