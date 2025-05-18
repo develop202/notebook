@@ -58,3 +58,21 @@ git remote add origin git@github.com:develop202/tmux.git
 git branch -M main
 git push -u origin main
 ```
+
+# 单用户创建多个私钥连接不同平台云端仓库
+
+1. 生成ssh密钥，第一次输入文件名，第二次输入密码
+
+```shell
+ssh-keygen -t rsa -b 2048 -C "tt"
+```
+
+1. 添加配置到~/.ssh/config
+
+```shell
+Host xxx.com # 随便填，不能重复
+AddKeysToAgent yes # 减去反复ssh-add的烦恼
+HostName xxx.com # 目标主机
+PreferredAuthentications publickey # 不知道是啥，看着都有，我也加上
+IdentityFile ~/.ssh/tt # 生成的私钥位置
+```
